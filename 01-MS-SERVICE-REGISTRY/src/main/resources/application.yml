@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: 01-MS-SERVICE-REGISTRY
+server:
+    port: 8761
+eureka:
+  client:
+    register-with-eureka: false
+  
