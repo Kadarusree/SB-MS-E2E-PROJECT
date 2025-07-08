@@ -11,6 +11,7 @@ public class Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
+		// Uncomment the line below to enable the admin server
 	}
 
 }
