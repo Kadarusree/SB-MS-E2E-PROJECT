@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @FeignClient("04-MS-MICROSERVICE-02")
 public interface MS2FeignClient {
 	
-	@GetMapping("/getMicroservice2Info")
+	@GetMapping("/ms2/getMicroservice2Info")
 	public String getMicroService2Inforamtion();
 
 }

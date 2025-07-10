@@ -6,12 +6,14 @@ import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.srikanth.feign.WelcomeAPI;
 import com.srikanth.responseentity.ApiResponse;
 
 @RestController
+@RequestMapping("/ms2")
 public class GreetController {
 	
 	@Value("${spring.application.name}")
