@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: 04-MS-MICROSERVICE-02
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080/
+server:
+  port: 8082
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

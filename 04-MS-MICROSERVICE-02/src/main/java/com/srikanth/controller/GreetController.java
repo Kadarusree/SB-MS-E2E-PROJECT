@@ -5,18 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HomeController {
+public class GreetController {
 	
 	@Value("${spring.application.name}")
 	private String appName;
 	
-	@GetMapping("/")
-	public String home() {
-		return "Welcome to the Spring Boot Admin Server!";
-	}
-	
-	@GetMapping("/sayHello")
-	public String hello() {
+	@GetMapping("/greet")
+	public String greet() {
 		return "Hello from " + appName + "!";
 	}
 
